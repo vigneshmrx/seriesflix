@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/icon2.png">
+    <style>
+        #contact {
+            width: 350px;
+            margin: 150px auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: #d62828;
+            /* box-shadow: 10px 10px #003049; */
+        }
+
+        input[type=text], input[type=email] {
+            width: 100%;
+            height: 20px;
+            padding: 10px;
+            background-color: #eae2b7;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #eae2b7;
+        }
+
+        input[type=button] {
+            text-align: center;
+            padding: 7px 10px;
+            border-radius: 5px;
+            border: none;
+            background: #eae2b7;
+            cursor: pointer;
+            font-family: "Lucida Console";
+        }
+
+        #submitBtn {
+            visibility: hidden;
+        }
+
+        @media (max-width: 768px) {
+            #contact {
+                width: 80%;
+            }
+        }
+    </style>
+    <script src="contact.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Seriesflix</div>
+        <div class="nav-menu">
+            <ul class="the-links">
+                <li class="links-itself"><a href="index.html">Home</a></li>
+                <li class="links-itself"><a href="series.html">Series</a></li>
+                <!-- <li class="links-itself"><a href="others.html">Others</a></li> -->
+                <li class="links-itself current-page"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div id="contact" onmouseover="showShadow();" onmouseout="hideShadow();">
+        <form>
+            Name*<br>
+            <input type="text" name="Name" id="nameBox"><br><br>
+            Mail id*<br>
+            <input type="email" name="Email" id="emailBox"><br><br>
+            Your message*<br>
+            <textarea name="Message" id="textBox"></textarea><br><br>
+            <input type="button" value="Confirm?" onclick="checkText();">
+            <input type="button" value="Submit" onclick="removeText();" id="submitBtn">
+        </form>
+    </div>
+    
+    <footer>
+        Website by Vignesh Rajesh Sundrani
+        <br>All the image credits go to google, pinterest and wallpapercave
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.content img {
+    float: left;
+    width: 250px;
+    margin: 10px 10px 10px 0;
+}
+/* img {
+    float: left;
+} */
+
+p {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.source {
+    font-size: 12px;
+}
+
+.song-heading {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+
+    .content img {
+        width: 250px;
+    }
+}

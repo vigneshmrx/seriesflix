@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ewert&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eae2b7;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003049;
+    height: 50px;
+}
+
+.logo {
+    /* font-family: "Rockwell"; */
+    font-family: 'Yatra One', cursive;
+    font-size: 16px;
+    /* font-family: 'Mogra', cursive; */
+    /* font-family: "Segoe Script"; */
+    /* font-weight: bold; */
+    /* font-family: "Script MT"; */
+    /* font-family: 'Monoton', cursive; */
+    /* font-family: 'Ewert', cursive; */
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.current-page {
+    border-bottom: 2px solid #fcbf49;
+    /* animation: text-underline 3s ease-in-out 2s infinite; */
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    color: #eae2b7;
+}
+
+.logo, li a {
+    color: #fcbf49;
+    letter-spacing: 1px;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.bar {
+    display: block;
+    margin: 5px auto;
+    width: 30px;
+    height: 3px;
+    background-color: #fcbf49;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+}
+
+footer {
+    background: #003049;
+    color: #fcbf49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50px;
+    font-size: 20px;
+}
+
+/* @keyframes text-underline {
+    25% {
+        border-bottom: 2px solid #fcbf49;
+    } 
+    50% {
+        border-bottom: 0;
+    }
+    75% {
+        border-bottom: 2px solid #fcbf49;
+    }
+} */
+
+@media(max-width: 768px) {
+    /* nav {
+      height: 50px;
+    } */
+    .hamburger {
+        display: block;
+    }
+
+    .current-page {
+        border: none;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(-45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(45deg);
+    }
+
+    .the-links {
+        position: fixed;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        background-color: #003049;
+        text-align: center;
+        width: 100%;
+        right: -100%;
+        transition: 0.3s;
+    }
+
+    /* .logo {
+        font-size: 25px;
+    } */
+
+    .links-itself {
+        margin: 16px auto;
+    }
+
+    /* li a {
+        font-size: 20px;
+    } */
+
+    .the-links.active {
+        right: 0;
+    }
+    /* footer {
+        height: 50px;
+    } */
+}
+

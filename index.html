@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/icon2.png">
+    <style>
+        section {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .welcomeMsg {
+            text-align: center;
+            font-size: 45px;
+            margin: 90px 0;
+        }
+        .contact {
+            /* width: 400px; */
+            /* margin: 0 auto; */
+            font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 7px 10px;
+            border-radius: 8px;
+            border: 0;
+            background: #d62828;
+            /* color: #fcbf49; */
+            font-style: normal;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-family: "Lucida Console";
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            scale: 1.03;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .redirecting-links {
+            font-size: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .welcomeMsg {
+                font-size: 35px;
+            }
+
+            .redirecting-links {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <nav>
+            <div class="logo">Seriesflix</div>
+            <div class="nav-menu">
+                <ul class="the-links">
+                    <li class="links-itself current-page"><a href="#">Home</a></li>
+                    <li class="links-itself"><a href="series.html">Series</a></li>
+                    <!-- <li class="links-itself"><a href="others.html">Others</a></li> -->
+                    <li class="links-itself"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <section>
+            <p class="welcomeMsg">Confused about your entertainment menu?<br>Let me help you decide on your next watch.<br>
+            What would it be, an Anime? A drama? Or a hollywood series?<br>Let's explore the world of series together!
+            <br>
+            <a href="series.html"><button>Click Here</button></a></p>
+            <hr><br>
+            <div class="redirecting-links">
+                <br>
+                <p>Wanna watch a K-Drama? Click the link below:<br>
+                -> <a href="https://dramacool.ba/" target="_blank">Dramacool</a></p><br>
+                <p>Wanna watch an anime? You can watch them in netflix or choose a site from below:<br>
+                -> <a href="https://zoro.to/" target="_blank">Zoro</a> or 
+            <br>-> <a href="https://allanime.site/" target="_blank">Allanime</a></p><br>
+                <p>Wanna watch a hollywood series? You can watch them in netflix or click the link below:<br>
+                <!-- -> <a href="" target="_blank">Sdmoviespoint</a> or<br> -->
+                -> <a href="https://ww5.soap2dayhd.co/home/" target="_blank">Soap2Day</a>
+                <!-- -> <a href="" target="_blank">Sflix</a></p> -->
+                <br><br><br>
+            </div><hr><br>
+            <div class="contact">
+                <p>Aything in mind or any suggestion?<br>Would love to get in touch!</p>
+                <a href="contact.html"><button>Contact Me</button></a> 
+            </div>
+        </section>
+        <footer>
+            Website by Vignesh Rajesh Sundrani
+            <br>All the image credits go to google, pinterest and wallpapercave
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>
